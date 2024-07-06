@@ -1,5 +1,6 @@
 // topic：1071. Greatest Common Divisor of Strings
 // runtime：0 ms
+// space : 8.6 MB
 
 // key : __gcd(a,b) ，求a、b的最大公因數
 

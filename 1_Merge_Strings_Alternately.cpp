@@ -1,5 +1,6 @@
 // topic：1768. Merge Strings Alternately
 // runtime：0 ms
+// space : 7.6 MB
 
 class Solution {
 public:
