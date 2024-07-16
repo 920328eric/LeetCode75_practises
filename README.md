@@ -1,4 +1,4 @@
-# LeetCode 上 LeetCode 75 最佳解答 
+# LeetCode 上 LeetCode 75 最佳解
 都是依據時間、空間最佳解
 
 ## 使用說明
