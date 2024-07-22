@@ -1,6 +1,6 @@
 // 1493. Longest Subarray of 1's After Deleting One Element
-// runtime：44 ms
-// space : 58.96 MB 
+// runtime：31 ms
+// space : 59.04 MB 
 
 class Solution {
 public:
@@ -20,9 +20,9 @@ public:
             }
             maxsum = max(maxsum,end-start); // end - start = end - start + 1 - 1
         }
-        if(maxsum == nums.size()){ // if the sliding window don't have any zero
-            maxsum-=1;
-        }
+        // if(maxsum == nums.size()){ // if the sliding window don't have any zero
+        //     maxsum-=1;
+        // } // because end starts from 0
         return maxsum;
     }
 };
