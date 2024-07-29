@@ -1,6 +1,6 @@
 // topic：151. Reverse Words in a String
-// runtime：3 ms
-// space :10.10 MB 
+// runtime：3 ms Beats 81.45%
+// space :10.10 MB Beats 48.09%
 // O(n) extra space
 
 // vector 會自己擴張容量大小的陣列。所以可以隨便加入或移除元素。

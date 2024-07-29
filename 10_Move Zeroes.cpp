@@ -1,6 +1,6 @@
 // topic：283. Move Zeroes
-// runtime：15 ms
-// space : 21.94 MB
+// runtime：15 ms Beats 68.14%
+// space : 21.94 MB Beats 15.82%
 
 class Solution {
 public:

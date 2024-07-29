@@ -1,6 +1,6 @@
 // 1493. Longest Subarray of 1's After Deleting One Element
-// runtime：31 ms
-// space : 59.04 MB 
+// runtime：31 ms Beats 95.07%
+// space : 59.04 MB Beats 8.98%
 
 class Solution {
 public:

@@ -1,6 +1,6 @@
 // topic：605. Can Place Flowers
-// runtime：3 ms
-// space : 22.74 MB
+// runtime：3 ms Beats 99.44%
+// space : 22.74 MB Beats 71.76%
 
 class Solution {
 public:

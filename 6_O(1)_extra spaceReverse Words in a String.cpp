@@ -1,6 +1,6 @@
 // topic：151. Reverse Words in a String
-// runtime：0 ms
-// space : 8.06 MB 
+// runtime：0 ms Beats 100.00%
+// space : 8.06 MB Beats 99.05%
 // O(1) extra space
 
 class Solution {

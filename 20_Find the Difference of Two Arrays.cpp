@@ -1,6 +1,6 @@
 // 2215. Find the Difference of Two Arrays
-// runtime：32 ms
-// space : 37.14 MB 
+// runtime：32 ms Beats 83.73%
+// space : 37.14 MB Beats 28.51%
 // O(n) time and O(n) extra space 
 
 // 1.unordered_set<int> set; // 容器裡面的元素是唯一的，具有不重複的特性，時間複雜度為常數級別O(1)，但消耗較多的記憶體，空間複雜度較高

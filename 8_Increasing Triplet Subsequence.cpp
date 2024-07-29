@@ -1,6 +1,6 @@
 // 334. Increasing Triplet Subsequence
-// runtime：78 ms
-// space :114.33 MB 
+// runtime：78 ms Beats 81.95%
+// space :114.33 MB Beats 32.70%
 // O(1) extra space and O(n) time
 
 class Solution {

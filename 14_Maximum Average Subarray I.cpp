@@ -1,6 +1,6 @@
 // 643. Maximum Average Subarray I
-// runtime：115 ms
-// space : 112.80 MB 
+// runtime：115 ms Beats 87.22%
+// space : 112.80 MB Beats 13.96%
 // O(n) time
 
 class Solution {

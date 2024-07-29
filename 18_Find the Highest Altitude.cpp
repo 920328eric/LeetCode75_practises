@@ -1,6 +1,6 @@
 // 1732. Find the Highest Altitude
-// runtime：0 ms
-// space : 10.08 MB 
+// runtime：0 ms Beats 100.00%
+// space : 10.08 MB Beats 24.53%
 
 class Solution {
 public:

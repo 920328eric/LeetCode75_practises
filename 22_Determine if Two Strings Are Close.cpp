@@ -1,6 +1,6 @@
 // 1657. Determine if Two Strings Are Close
-// runtime：98 ms
-// space : 23.42 MB 
+// runtime：98 ms Beats 48.66%
+// space : 23.42 MB Beats 25.58%
 
 // key1:字符集必須相同：兩個字符串如果要相互變換，那麼它們包含的字符必須完全一樣。
 // key2:字符頻率分佈必須相同：每個字符出現的次數也必須一致，因為交換操作不會改變字符的出現次數。(頻率出現的頻率相同就好)

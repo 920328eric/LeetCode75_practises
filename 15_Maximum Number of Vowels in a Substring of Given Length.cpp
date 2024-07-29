@@ -1,6 +1,6 @@
 // 1456. Maximum Number of Vowels in a Substring of Given Length
-// runtime：20 ms
-// space : 11.54 MB 
+// runtime：20 ms Beats 62.51%
+// space : 11.54 MB Beats 24.06%
 
 class Solution {
 public:

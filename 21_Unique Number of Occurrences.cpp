@@ -1,6 +1,6 @@
 // 1207. Unique Number of Occurrences
-// runtime：0 ms
-// space : 11.49 MB 
+// runtime：0 ms Beats 100.00%
+// space : 11.49 MB Beats 21.68%
 
 // 1.auto：
 // •使用 auto 宣告變數會進行值拷貝。

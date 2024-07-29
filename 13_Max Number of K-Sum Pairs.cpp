@@ -1,6 +1,6 @@
 // 1679. Max Number of K-Sum Pairs
-// runtime：120 ms
-// space : 76.68 MB 
+// runtime：120 ms Beats 28.36%
+// space : 76.68 MB Beats 7.00%
 // O(n) time
 
 // https://shengyu7697.github.io/std-map/

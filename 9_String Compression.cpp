@@ -1,6 +1,6 @@
 // 443. String Compression
-// runtime：0 ms
-// space : 14.06 MB 
+// runtime：0 ms Beats 100.00%
+// space : 14.06 MB Beats 10.70%
 // O(1) extra space
 
 // countstr 是一個字串（string），用於暫時儲存數字的字元表示。雖然它的大小可能會根據壓縮後的計數而變化，

@@ -1,6 +1,6 @@
 // 1004. Max Consecutive Ones III
-// runtime：24 ms
-// space : 58.14 MB 
+// runtime：24 ms Beats 98.77%
+// space : 58.14 MB Beats 20.24%
 
 // 精闢的算法，只能背起來
 // 1~3 共有 （3 - 1） + 1 位數

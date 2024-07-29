@@ -1,6 +1,6 @@
 // 238. Product of Array Except Self
-// runtime：20 ms
-// space :38.06 MB 
+// runtime：20 ms Beats 92.22%
+// space :38.06 MB Beats 92.04%
 // O(1) extra space and O(n) time
 
 class Solution {

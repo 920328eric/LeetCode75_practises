@@ -1,6 +1,6 @@
 // topic：392. Is Subsequence
-// runtime：0 ms
-// space : 7.79 MB
+// runtime：0 ms Beats 100.00%
+// space : 7.79 MB Beats 24.04%
 
 class Solution {
 public:

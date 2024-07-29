@@ -1,6 +1,6 @@
 // topic：345. Reverse Vowels of a String
-// runtime：3 ms
-// space : 9.2 MB
+// runtime：3 ms Beats 96.34% 
+// space : 9.2 MB Beats 58.66%
 
 // key : reverse(vowels.begin(),vowels.end());
 

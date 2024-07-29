@@ -1,6 +1,6 @@
 // 724. Find Pivot Index
-// runtime：16 ms
-// space : 34.74 MB 
+// runtime：16 ms Beats 64.98%
+// space : 34.74 MB Beats 21.54%
 
 // 函數共有四個參數，其中前三個為必須，第四個為非必需。
 // 若不指定第四個參數，則預設對範圍內的元素進行累加操作。
