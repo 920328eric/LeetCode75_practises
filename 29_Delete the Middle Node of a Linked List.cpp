@@ -11,3 +11,35 @@
 // 當 head == nullptr 時： 在這種情況下，delete head; 實際上不會做任何事情。C++ 標準規定，對 nullptr 使用 delete 是安全的，不會造成任何問題
 // delete i; // 釋放使用的記憶體空間
 
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* deleteMiddle(ListNode* head) {
+        if(head==nullptr || head->next==nullptr){
+            delete head;
+            return nullptr;
+        }
+        // slow 被聲明為 ListNode* 類型，意味著它是一個指向 ListNode 結構的指針
+        // 這行代碼將 head 的值（即第一個節點的地址）賦給 slow，使 slow 指向鏈表的第一個節點
+        ListNode * slow=head;
+        ListNode * fast=head;
+        ListNode * pre=nullptr;
+        while(fast!=nullptr&&fast->next!=nullptr){
+            fast=fast->next->next;
+            pre=slow; // stores the previous position of slow
+            slow=slow->next;
+        }
+        pre->next=slow->next;
+        delete slow;
+        return head;
+    }
+};
