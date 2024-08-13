@@ -22,7 +22,7 @@ public:
         ListNode * pre=nullptr;
         ListNode * temp=nullptr;
         // reverse the first half of the linked list and find the midpoint at the smae time
-        while(fast!=nullptr&&fast->next!=nullptr){
+        while(fast!=nullptr){
             fast=fast->next->next;
             // reverse the first half of the linked list
             temp=slow->next;
