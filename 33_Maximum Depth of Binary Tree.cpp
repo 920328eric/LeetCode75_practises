@@ -1,6 +1,6 @@
 // 104. Maximum Depth of Binary Tree
-// runtime：8 ms Beats 37.34%
-// space : 17.66 MB Beats 48.26%
+// runtime：7 ms Beats 51.24%
+// space : 17.64 MB Beats 49.40%
 
 // 遞迴本身就包含了計數的功能。在遞迴中，每一層函數調用都負責處理當前的節點並將結果返回給上層，這樣就自然而然地實現了計數的功能
 //     1
