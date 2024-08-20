@@ -4,7 +4,6 @@
 
 // optimal way（only use vector to represent stack)
 
-// if (!exploded) = if (exploded == false) = if (exploded != true)
 // vector.pop_back();
 // vector.back(); the last num in vector
 
@@ -28,7 +27,7 @@ public:
                     break;
                 }
             }
-            if(!exploded){ // = if (exploded == false)
+            if(!exploded){ // 因為 !exploded 是 true，所以會執行
                 stack.push_back(i);
             }
         }
