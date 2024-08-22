@@ -1,6 +1,6 @@
 // 236. Lowest Common Ancestor of a Binary Tree
 // runtime：17 ms Beats 23.92%
-// space : 16.41 MB Beats 17.46%
+// space : 16.29 MB Beats 60.34%
 
 /**
  * Definition for a binary tree node.
