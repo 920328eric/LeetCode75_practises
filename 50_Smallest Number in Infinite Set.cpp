@@ -1,6 +1,6 @@
 // 2336. Smallest Number in Infinite Set
-// runtime : 62 ms Beats 69.90%
-// space : 40.72 MB Beats 63.89%
+// runtime : 60 ms Beats 74.19%
+// space : 40.58 MB Beats 82.77%
 
 // set.insert(1);
 //
@@ -16,8 +16,8 @@
 
 class SmallestInfiniteSet {
 private:
-    set<int> added; // 判斷數字有無被加到過 minheap 裡
     priority_queue<int,vector<int>,greater<int>> minheap; // 存放 < current 已被刪除的數
+    unordered_set<int> added; // 判斷數字有無被加到過 minheap 裡
     int current;
 public:
     SmallestInfiniteSet() {
@@ -26,10 +26,10 @@ public:
     
     int popSmallest() {
         if(!minheap.empty()){
-            int x=minheap.top();
+            int ans = minheap.top();
             minheap.pop();
-            added.erase(x);
-            return x;
+            added.erase(ans);
+            return ans;
         }
         else{
             return current++;
@@ -37,9 +37,9 @@ public:
     }
     
     void addBack(int num) {
-        if(num<current && added.find(num)==added.end()){ // num 大於或等於 current，表示這個數字還未被取出
-            added.insert(num);
+        if(num < current && added.find(num)==added.end()){ // num 大於或等於 current，表示這個數字還未被取出
             minheap.push(num);
+            added.insert(num);
         }
     }
 };
