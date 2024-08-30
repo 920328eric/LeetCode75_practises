@@ -2,6 +2,9 @@
 // runtime : 160 ms Beats 20.41%
 // space : 100.90 MB Beats 87.84%
 
+// # Approach
+// 找到一組乘績的右半部都是 > success，所以必須先由小到大排序 potions
+
 class Solution {
 public:
     vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {
