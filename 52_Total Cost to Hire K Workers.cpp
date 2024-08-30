@@ -1,6 +1,6 @@
 // 2462. Total Cost to Hire K Workers
-// runtime : 131 ms Beats 35.35%
-// space : 76.99 MB Beats 64.72%
+// runtime : 124 ms Beats 52.12%
+// space : 76.87 MB Beats 75.73%
 
 class Solution {
 public:
@@ -9,8 +9,8 @@ public:
         int end=costs.size()-1;
         priority_queue<int,vector<int>,greater<int>> minheapf; // 存放前半部，並由小到大排好
         priority_queue<int,vector<int>,greater<int>> minheape; // 存放後半部，並由小到大排好
+        long long num1,num2; // 前後半部分別的最小值
         long long ans=0;
-        int num1,num2; // 前後半部分別的最小值
         while(k>0){
             k-=1;
             while(minheapf.size()<candidates && first<=end){ // size不夠就補齊
@@ -22,15 +22,11 @@ public:
             if(!minheapf.empty()){
                 num1=minheapf.top();
             }
-            else{
-                num1=INT_MAX; // 確保一定會比較大
-            }
+            else{num1=INT_MAX;} // 確保一定會比較大
             if(!minheape.empty()){
                 num2=minheape.top();
             }
-            else{
-                num2=INT_MAX;
-            }
+            else{num2=INT_MAX;}
             if(num1<=num2){ // 相等也是刪去前半部
                 ans+=num1;
                 minheapf.pop();
