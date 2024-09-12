@@ -1,6 +1,6 @@
 // 208. Implement Trie (Prefix Tree)
-// runtime : 
-// space : 
+// runtime : 40 ms Beats 86.78%
+// space : 48.59 MB Beats 36.57%
 
 // Trie 是一種樹狀結構，可以用來在大量字串中快速搜尋某個字串。
 // 雖然這個問題也可以用 hash table 來解決，但在以下情況下，Trie 有其獨特的優勢：
@@ -17,7 +17,8 @@
 // Trie 的 root 是不含資料
 // 每個 node 都包含一個 boolean 變數 isword，紀錄該 node 是不是一個單字的結尾。
 
-//  root
+// 示意圖：
+//   root
 //   |
 //   c
 //   |
@@ -42,15 +43,15 @@ private:
     TrieNode * root;
 public:
     Trie() {
-        root=new TrieNode()
+        root=new TrieNode();
     }
     
     void insert(string word) {
-        TrileNode * cur=root;
+        TrieNode * cur=root;
         for(char c:word){
-            int index=c-'a';
+            int index=c-'a'; // ASCII
             if(cur->children[index]==nullptr){
-                cur->children[index]=new TrileNode()
+                cur->children[index]=new TrieNode();
             }
             cur=cur->children[index];
         }
@@ -58,14 +59,27 @@ public:
     }
     
     bool search(string word) {
-        TrileNode * cur=root;
+        TrieNode * cur=root;
         for(char c:word){
-            
+            int index=c-'a';
+            if(cur->children[index]==nullptr){
+                return false;
+            }
+            cur=cur->children[index];
         }
+        return cur->isword; // 我們需要檢查最後一個節點是否被標記為單詞結尾，所以必須檢查最後一個字母的 isword 是否為 true
     }
     
     bool startsWith(string prefix) {
-        
+        TrieNode * cur=root;
+        for(char c:prefix){
+            int index=c-'a';
+            if(cur->children[index]==nullptr){
+                return false;
+            }
+            cur=cur->children[index]; 
+        }
+        return true; // 只要能夠遍歷完整個前綴而不返回 false，就意味著這個前綴存在，不需要檢查最後一個節點是否是單詞結尾
     }
 };
 
