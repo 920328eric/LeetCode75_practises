@@ -1,6 +1,6 @@
 // 435. Non-overlapping Intervals
-// runtime : 236 ms Beats 66.52%
-// space : 93.42 MB Beats 92.92%
+// runtime : 216 ms Beats 94.37%
+// space : 93.56 MB Beats 82.69%
 
 // sort() 底層為 intro sort，是以 Quick Sort 為核心的混合型排序法。在一般 Quick Sort 流程加入以下變化：
 // 1.在元素少到一定程度時使用 Insertion Sort
@@ -23,6 +23,9 @@
 // 不僅要選擇第一個結束最早的區間，還要連續選擇所有可能的非重疊區間
 // 通過不斷更新 pre，確保了算法可以找到最多的非重疊區間
 
+// 刪除重疊區間問題的目標是最大化不重疊的區間數量。
+// 刪除重疊區間問題在沒有重疊時更新 pre，以最大化保留的區間數。
+
 class Solution {
 public:
     static bool compareEnd(vector<int>& i1,vector<int>& i2){
@@ -30,8 +33,7 @@ public:
     }
     int eraseOverlapIntervals(vector<vector<int>>& intervals) {
         sort(intervals.begin(),intervals.end(),compareEnd);
-        int pre=0;
-        int ans=0;
+        int ans=0,pre=0;
         for(int i=1;i<intervals.size();i++){
             if(intervals[i][0]<intervals[pre][1]){ // 後面的開始時間 如果小於 前一個的結束時間，那就要刪掉，因為會重疊
                 ans+=1;
