@@ -4,10 +4,7 @@
 
 // string.substr( 子字符串的起始位置（可選，默認為 0）, 子字符串的長度（可選，默認為到字符串結尾）)
 
-// 用 Trie 表現會最好，可自行嘗試
-// 1.先架好 TrieNode 結構，裡頭包含 insert、search
-// 2.主函數先把所有 products insert 到 TrieNode 裡
-// 3.接著就可以在主函數裡，找到對應 prefix 的答案了
+// 這裡的方法是為了和 Trie 方法做比較
 
 class Solution {
 public:
